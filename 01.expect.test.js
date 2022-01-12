@@ -1,4 +1,4 @@
-const { test, expect, jest } = require("@jest/globals")
+const { test, expect, jest } = require('@jest/globals')
 
 test('test common matcher', () => {
   expect(2 + 2).toBe(4)
@@ -15,11 +15,10 @@ test('test number', () => {
   expect(4).toBeLessThan(5)
 })
 
-
 test('test object', () => {
   expect({
-    name: 'ronnie'
+    name: 'ronnie',
   }).toEqual({
-    name: 'ronnie'
+    name: 'ronnie',
   })
 })

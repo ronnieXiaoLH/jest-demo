@@ -1,4 +1,4 @@
-const { it, expect } = require("@jest/globals")
+const { it, expect } = require('@jest/globals')
 
 // callback
 const fetchUser = (cb) => {
@@ -18,7 +18,7 @@ it('test callback', (done) => {
 const userPromise = () => Promise.resolve('hello')
 
 it('test Promise', () => {
-  return userPromise().then(res => {
+  return userPromise().then((res) => {
     expect(res).toBe('hello')
   })
 })

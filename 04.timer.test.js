@@ -1,12 +1,12 @@
-const { it, expect } = require("@jest/globals")
+const { it, expect } = require('@jest/globals')
 
-const fetchUser = cb => {
+const fetchUser = (cb) => {
   setTimeout(() => {
     cb('hello')
   }, 1000)
 }
 
-const loopFetchUser = cb => {
+const loopFetchUser = (cb) => {
   setTimeout(() => {
     cb('one')
     setTimeout(() => {

@@ -1,4 +1,4 @@
-const { it, expect } = require("@jest/globals")
+const { it, expect } = require('@jest/globals')
 const axios = require('axios')
 const getUserName = require('./user')
 
@@ -33,7 +33,7 @@ it('test mock with implementation', () => {
 })
 
 it('test with mock modules', () => {
-  return getUserName(1).then(name => {
+  return getUserName(1).then((name) => {
     console.log(name)
     expect(axios.get).toHaveBeenCalled()
     expect(axios.get).toHaveBeenCalledTimes(1)
