@@ -1,0 +1,16 @@
+{
+  "name": "jest-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "02.async.test.js",
+  "scripts": {
+    "test": "jest 04.timer.test.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "jest": "^27.4.7"
+  }
+}
